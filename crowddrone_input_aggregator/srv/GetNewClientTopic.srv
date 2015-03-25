@@ -1,0 +1,6 @@
+string assignmentId
+string hitId
+string workerId
+string turkSubmitTo
+---
+string topic

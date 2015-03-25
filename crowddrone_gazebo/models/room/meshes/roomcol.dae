@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Elliot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.4.1;  Revision: exported;  Platform: x64;  Configuration: Release_Max2009_static</authoring_tool>
+      <source_data>file:///C:/Users/Elliot/Documents/3dsmax/scenes/course.max</source_data>
+    </contributor>
+    <created>2014-03-24T19:42:21</created>
+    <modified>2014-03-24T19:42:21</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ColorEffectR229G166B215">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.8980392 0.6509804 0.8431373 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.8980392 0.6509804 0.8431373 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR229G166B215-material" name="ColorEffectR229G166B215-material">
+      <instance_effect url="#ColorEffectR229G166B215"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Circle02" name="Circle02">
+      <spline closed="1">
+        <source id="geom-Circle02-positions">
+          <float_array id="geom-Circle02-positions-array" count="24">39.37008 -1.72092e-6 0 4.69483e-7 -39.37008 0 -39.37008 -3.44184e-6 0 -1.72092e-6 39.37008 0 39.37008 -1.72092e-6 0 78.74016 -39.37008 0 118.1102 0 0 78.74016 39.37008 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Circle02-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Circle02-intangents">
+          <float_array id="geom-Circle02-intangents-array" count="24">39.37008 21.72386 0 21.72387 -39.37008 0 -39.37008 -21.72387 0 -21.72387 39.37008 0 39.37008 21.72386 0 57.01629 -39.37008 0 118.1102 -21.72387 0 100.464 39.37008 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Circle02-intangents-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Circle02-outtangents">
+          <float_array id="geom-Circle02-outtangents-array" count="24">39.37008 -21.72387 0 -21.72387 -39.37008 0 -39.37008 21.72386 0 21.72386 39.37008 0 39.37008 -21.72387 0 100.464 -39.37008 0 118.1102 21.72387 0 57.01629 39.37008 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Circle02-outtangents-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Circle02-interpolations">
+          <Name_array id="geom-Circle02-interpolations-array" count="8">BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER</Name_array>
+          <technique_common>
+            <accessor source="#geom-Circle02-interpolations-array" count="8" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <control_vertices>
+          <input semantic="POSITION" source="#geom-Circle02-positions"/>
+          <input semantic="IN_TANGENT" source="#geom-Circle02-intangents"/>
+          <input semantic="OUT_TANGENT" source="#geom-Circle02-outtangents"/>
+          <input semantic="INTERPOLATION" source="#geom-Circle02-interpolations"/>
+        </control_vertices>
+      </spline>
+    </geometry>
+    <geometry id="geom-Rectangle01" name="Rectangle01">
+      <spline closed="1">
+        <source id="geom-Rectangle01-positions">
+          <float_array id="geom-Rectangle01-positions-array" count="12">4.92126 0.1968504 0 -4.92126 0.1968504 0 -4.92126 -0.1968504 0 4.92126 -0.1968504 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Rectangle01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Rectangle01-intangents">
+          <float_array id="geom-Rectangle01-intangents-array" count="12">4.92126 0.0656168 0 -1.64042 0.1968504 0 -4.92126 -0.0656168 0 1.64042 -0.1968504 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Rectangle01-intangents-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Rectangle01-outtangents">
+          <float_array id="geom-Rectangle01-outtangents-array" count="12">1.64042 0.1968504 0 -4.92126 0.0656168 0 -1.64042 -0.1968504 0 4.92126 -0.0656168 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Rectangle01-outtangents-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Rectangle01-interpolations">
+          <Name_array id="geom-Rectangle01-interpolations-array" count="4">BEZIER BEZIER BEZIER BEZIER</Name_array>
+          <technique_common>
+            <accessor source="#geom-Rectangle01-interpolations-array" count="4" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <control_vertices>
+          <input semantic="POSITION" source="#geom-Rectangle01-positions"/>
+          <input semantic="IN_TANGENT" source="#geom-Rectangle01-intangents"/>
+          <input semantic="OUT_TANGENT" source="#geom-Rectangle01-outtangents"/>
+          <input semantic="INTERPOLATION" source="#geom-Rectangle01-interpolations"/>
+        </control_vertices>
+      </spline>
+    </geometry>
+    <geometry id="geom-Plane01" name="Plane01">
+      <mesh>
+        <source id="geom-Plane01-positions">
+          <float_array id="geom-Plane01-positions-array" count="12">-984.252 -984.252 0 984.252 -984.252 0 -984.252 984.252 0 984.252 984.252 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane01-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane01-normals">
+          <float_array id="geom-Plane01-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane01-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane01-map1">
+          <float_array id="geom-Plane01-map1-array" count="24">0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane01-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Plane01-vertices">
+          <input semantic="POSITION" source="#geom-Plane01-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="2">
+          <input semantic="VERTEX" source="#geom-Plane01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Plane01-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Plane01-map1" offset="2" set="0"/>
+          <p>2 0 6 0 1 4 3 2 7 1 3 5 3 2 7 0 1 4</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_plane>
+            <density>1</density>
+            <generateuvs>1</generateuvs>
+            <lenght>1968.504</lenght>
+            <lenghtsegments>1</lenghtsegments>
+            <scale>1</scale>
+            <width>1968.504</width>
+            <widthsegments>1</widthsegments>
+          </max_plane>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="geom-Plane02" name="Plane02">
+      <mesh>
+        <source id="geom-Plane02-positions">
+          <float_array id="geom-Plane02-positions-array" count="12">-984.252 -984.252 0 984.252 -984.252 0 -984.252 984.252 0 984.252 984.252 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane02-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane02-normals">
+          <float_array id="geom-Plane02-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane02-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane02-map1">
+          <float_array id="geom-Plane02-map1-array" count="24">0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane02-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Plane02-vertices">
+          <input semantic="POSITION" source="#geom-Plane02-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="2">
+          <input semantic="VERTEX" source="#geom-Plane02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Plane02-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Plane02-map1" offset="2" set="0"/>
+          <p>2 0 6 0 1 4 3 2 7 1 3 5 3 2 7 0 1 4</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_plane>
+            <density>1</density>
+            <generateuvs>1</generateuvs>
+            <lenght>1968.504</lenght>
+            <lenghtsegments>1</lenghtsegments>
+            <scale>1</scale>
+            <width>1968.504</width>
+            <widthsegments>1</widthsegments>
+          </max_plane>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="geom-Plane03" name="Plane03">
+      <mesh>
+        <source id="geom-Plane03-positions">
+          <float_array id="geom-Plane03-positions-array" count="12">-984.252 -984.252 0 984.252 -984.252 0 -984.252 984.252 0 984.252 984.252 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane03-normals">
+          <float_array id="geom-Plane03-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane03-map1">
+          <float_array id="geom-Plane03-map1-array" count="24">0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane03-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Plane03-vertices">
+          <input semantic="POSITION" source="#geom-Plane03-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="2">
+          <input semantic="VERTEX" source="#geom-Plane03-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Plane03-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Plane03-map1" offset="2" set="0"/>
+          <p>2 0 6 0 1 4 3 2 7 1 3 5 3 2 7 0 1 4</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_plane>
+            <density>1</density>
+            <generateuvs>1</generateuvs>
+            <lenght>1968.504</lenght>
+            <lenghtsegments>1</lenghtsegments>
+            <scale>1</scale>
+            <width>1968.504</width>
+            <widthsegments>1</widthsegments>
+          </max_plane>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="geom-Plane04" name="Plane04">
+      <mesh>
+        <source id="geom-Plane04-positions">
+          <float_array id="geom-Plane04-positions-array" count="12">-984.252 -984.252 0 984.252 -984.252 0 -984.252 984.252 0 984.252 984.252 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane04-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane04-normals">
+          <float_array id="geom-Plane04-normals-array" count="12">0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane04-normals-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Plane04-map1">
+          <float_array id="geom-Plane04-map1-array" count="24">0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Plane04-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Plane04-vertices">
+          <input semantic="POSITION" source="#geom-Plane04-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="2">
+          <input semantic="VERTEX" source="#geom-Plane04-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Plane04-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Plane04-map1" offset="2" set="0"/>
+          <p>2 0 6 0 1 4 3 2 7 1 3 5 3 2 7 0 1 4</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_plane>
+            <density>1</density>
+            <generateuvs>1</generateuvs>
+            <lenght>1968.504</lenght>
+            <lenghtsegments>1</lenghtsegments>
+            <scale>1</scale>
+            <width>1968.504</width>
+            <widthsegments>1</widthsegments>
+          </max_plane>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Plane01" name="Plane01">
+        <translate>0 213.4699 5.60227e-6</translate>
+        <rotate>-1 0 0 -90</rotate>
+        <instance_geometry url="#geom-Plane01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR229G166B215-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Plane02" name="Plane02">
+        <translate>-392.024 0 5.60227e-6</translate>
+        <rotate>0.5773502 0.5773503 0.5773503 -240</rotate>
+        <instance_geometry url="#geom-Plane02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR229G166B215-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Plane03" name="Plane03">
+        <translate>393.1648 0 5.60227e-6</translate>
+        <rotate>-0.5773502 0.5773503 0.5773503 -120</rotate>
+        <instance_geometry url="#geom-Plane03">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR229G166B215-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Plane04" name="Plane04">
+        <translate>0 -221.5901 5.60227e-6</translate>
+        <rotate>1 0 0 -90</rotate>
+        <instance_geometry url="#geom-Plane04">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR229G166B215-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

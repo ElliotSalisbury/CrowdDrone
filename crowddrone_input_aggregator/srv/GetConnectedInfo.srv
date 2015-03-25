@@ -1,0 +1,6 @@
+string data
+---
+int64 count
+string[] hitIds
+string[] workerIds
+string[] assignmentIds

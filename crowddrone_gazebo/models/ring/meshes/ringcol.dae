@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Elliot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.4.1;  Revision: exported;  Platform: x64;  Configuration: Release_Max2009_static</authoring_tool>
+    </contributor>
+    <created>2014-03-14T15:29:45</created>
+    <modified>2014-03-14T15:29:45</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ColorEffectR5G54B179">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.01960784 0.2117647 0.7019608 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.01960784 0.2117647 0.7019608 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ColorEffectR213G154B229">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.8352941 0.6039216 0.8980392 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.8352941 0.6039216 0.8980392 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR5G54B179-material" name="ColorEffectR5G54B179-material">
+      <instance_effect url="#ColorEffectR5G54B179"/>
+    </material>
+    <material id="ColorEffectR213G154B229-material" name="ColorEffectR213G154B229-material">
+      <instance_effect url="#ColorEffectR213G154B229"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Torus02" name="Torus02">
+      <mesh>
+        <source id="geom-Torus02-positions">
+          <float_array id="geom-Torus02-positions-array" count="72">-1.37725e-6 31.50775 0 -1.32562e-6 30.32665 0.6819097 -1.32562e-6 30.32665 -0.6819098 22.27934 22.27934 0 21.44418 21.44418 0.6819097 21.44418 21.44418 -0.6819098 31.50775 0 0 30.32665 0 0.6819097 30.32665 0 -0.6819098 22.27934 -22.27934 0 21.44418 -21.44418 0.6819097 21.44418 -21.44418 -0.6819098 -1.37725e-6 -31.50775 0 -1.32562e-6 -30.32665 0.6819097 -1.32562e-6 -30.32665 -0.6819098 -22.27934 -22.27934 0 -21.44418 -21.44418 0.6819097 -21.44418 -21.44418 -0.6819098 -31.50775 2.7545e-6 0 -30.32665 2.65124e-6 0.6819097 -30.32665 2.65124e-6 -0.6819098 -22.27934 22.27935 0 -21.44418 21.44418 0.6819097 -21.44418 21.44418 -0.6819098</float_array>
+          <technique_common>
+            <accessor source="#geom-Torus02-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Torus02-normals">
+          <float_array id="geom-Torus02-normals-array" count="72">-2.20224e-7 1 -7.26624e-7 -0.2150646 -0.2150645 0.952625 0.7071067 0.7071069 -4.44305e-7 -7.01628e-8 -0.3041472 0.952625 -0.2150649 -0.2150648 -0.9526249 2.80651e-7 -0.3041479 -0.9526249 -0.3041478 -7.01628e-8 0.9526249 1 1.23418e-8 4.93672e-8 -0.3041479 7.01628e-8 -0.9526248 -0.2150649 0.2150648 0.9526249 0.7071067 -0.7071068 4.44305e-7 -0.2150645 0.2150645 -0.952625 1.75407e-7 0.3041477 0.9526249 -1.23418e-8 -1 0 -1.05244e-7 0.3041472 -0.952625 0.2150645 0.2150645 0.952625 -0.7071068 -0.7071066 3.94938e-7 0.2150646 0.2150648 -0.952625 0.3041471 5.26221e-8 0.952625 -1 2.46836e-7 7.89875e-7 0.3041475 -7.01628e-8 -0.9526249 0.2150646 -0.2150653 0.9526249 -0.7071066 0.707107 3.94938e-7 0.2150642 -0.2150644 -0.9526252</float_array>
+          <technique_common>
+            <accessor source="#geom-Torus02-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Torus02-map1">
+          <float_array id="geom-Torus02-map1-array" count="108">0 0 0 0.3333333 0 0 0.6666667 0 0 1 0 0 0 0.125 0 0.3333333 0.125 0 0.6666667 0.125 0 1 0.125 0 0 0.25 0 0.3333333 0.25 0 0.6666667 0.25 0 1 0.25 0 0 0.375 0 0.3333333 0.375 0 0.6666667 0.375 0 1 0.375 0 0 0.5 0 0.3333333 0.5 0 0.6666667 0.5 0 1 0.5 0 0 0.625 0 0.3333333 0.625 0 0.6666667 0.625 0 1 0.625 0 0 0.75 0 0.3333333 0.75 0 0.6666667 0.75 0 1 0.75 0 0 0.875 0 0.3333333 0.875 0 0.6666667 0.875 0 1 0.875 0 0 1 0 0.3333333 1 0 0.6666667 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Torus02-map1-array" count="36" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Torus02-vertices">
+          <input semantic="POSITION" source="#geom-Torus02-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="48">
+          <input semantic="VERTEX" source="#geom-Torus02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Torus02-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Torus02-map1" offset="2" set="0"/>
+          <p>0 0 0 4 1 5 3 2 4 0 0 0 1 3 1 4 1 5 1 3 1 5 4 6 4 1 5 1 3 1 2 5 2 5 4 6 2 5 2 3 2 7 5 4 6 2 5 2 0 0 3 3 2 7 3 2 4 7 6 9 6 7 8 3 2 4 4 1 5 7 6 9 4 1 5 8 8 10 7 6 9 4 1 5 5 4 6 8 8 10 5 4 6 6 7 11 8 8 10 5 4 6 3 2 7 6 7 11 6 7 8 10 9 13 9 10 12 6 7 8 7 6 9 10 9 13 7 6 9 11 11 14 10 9 13 7 6 9 8 8 10 11 11 14 8 8 10 9 10 15 11 11 14 8 8 10 6 7 11 9 10 15 9 10 12 13 12 17 12 13 16 9 10 12 10 9 13 13 12 17 10 9 13 14 14 18 13 12 17 10 9 13 11 11 14 14 14 18 11 11 14 12 13 19 14 14 18 11 11 14 9 10 15 12 13 19 12 13 16 16 15 21 15 16 20 12 13 16 13 12 17 16 15 21 13 12 17 17 17 22 16 15 21 13 12 17 14 14 18 17 17 22 14 14 18 15 16 23 17 17 22 14 14 18 12 13 19 15 16 23 15 16 20 19 18 25 18 19 24 15 16 20 16 15 21 19 18 25 16 15 21 20 20 26 19 18 25 16 15 21 17 17 22 20 20 26 17 17 22 18 19 27 20 20 26 17 17 22 15 16 23 18 19 27 18 19 24 22 21 29 21 22 28 18 19 24 19 18 25 22 21 29 19 18 25 23 23 30 22 21 29 19 18 25 20 20 26 23 23 30 20 20 26 21 22 31 23 23 30 20 20 26 18 19 27 21 22 31 21 22 28 1 3 33 0 0 32 21 22 28 22 21 29 1 3 33 22 21 29 2 5 34 1 3 33 22 21 29 23 23 30 2 5 34 23 23 30 0 0 35 2 5 34 23 23 30 21 22 31 0 0 35</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_torus>
+            <generateuvs>1</generateuvs>
+            <radius1>30.72035</radius1>
+            <radius2>0.7874016</radius2>
+            <rotation>0</rotation>
+            <segments>8</segments>
+            <sides>3</sides>
+            <slicefrom>0</slicefrom>
+            <sliceon>0</sliceon>
+            <sliceto>0</sliceto>
+            <smooth>2</smooth>
+            <twist>0</twist>
+          </max_torus>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_cameras>
+    <camera id="Camera02-camera" name="Camera02">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov>45</xfov>
+            <znear>1</znear>
+            <zfar>1000</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <target>#Camera02.Target</target>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Camera02" name="Camera02">
+        <matrix>0.9914445 -0.04249516 0.1234156 23.14921 0.1305265 0.3227818 -0.9374292 -87.50542 1.19209e-7 0.9455185 0.3255666 24.23115 0 0 0 1</matrix>
+        <instance_camera url="#Camera02-camera"/>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Camera02.Target" name="Camera02.Target">
+        <translate>17.80124 -46.88368 10.12332</translate>
+        <rotate>-0.9936905 -0.06512977 -0.0913092 -71.34331</rotate>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Torus02" name="Torus02">
+        <rotate>-1 0 0 -90</rotate>
+        <instance_geometry url="#geom-Torus02">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR213G154B229-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

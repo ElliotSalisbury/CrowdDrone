@@ -1,0 +1,3 @@
+This has been test on Ubuntu 12.04, with ROS Hydra, and Gazebo 3
+While the CrowdDrone algorithms are expected to work on system, the ROS/Gazebo environment can be a little picky.
+

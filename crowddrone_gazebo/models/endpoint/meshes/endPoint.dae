@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Elliot</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.4.1;  Revision: exported;  Platform: x64;  Configuration: Release_Max2009_static</authoring_tool>
+      <source_data>file:///C:/Users/Elliot/Documents/3dsmax/scenes/course2.max</source_data>
+    </contributor>
+    <created>2014-10-20T17:37:31</created>
+    <modified>2014-10-20T17:37:31</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ColorEffectR198G225B87">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.3411765 0.9223529 0.3411765 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.3411765 0.9223529 0.3411765 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR198G225B87-material" name="ColorEffectR198G225B87-material">
+      <instance_effect url="#ColorEffectR198G225B87"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Cylinder01" name="Cylinder01">
+      <mesh>
+        <source id="geom-Cylinder01-positions">
+          <float_array id="geom-Cylinder01-positions-array" count="114">0 0 0 39.37008 0 0 36.99577 13.46536 0 30.15923 25.3066 0 19.68504 34.09549 0 6.83654 38.77196 0 -6.836547 38.77196 0 -19.68504 34.09549 0 -30.15923 25.3066 0 -36.99577 13.46536 0 -39.37008 5.94472e-6 0 -36.99577 -13.46535 0 -30.15924 -25.30659 0 -19.68505 -34.09548 0 -6.836559 -38.77196 0 6.836523 -38.77196 0 19.68502 -34.0955 0 30.15921 -25.30662 0 36.99576 -13.46539 0 39.37008 0 0.7874016 36.99577 13.46536 0.7874016 30.15923 25.3066 0.7874016 19.68504 34.09549 0.7874016 6.83654 38.77196 0.7874016 -6.836547 38.77196 0.7874016 -19.68504 34.09549 0.7874016 -30.15923 25.3066 0.7874016 -36.99577 13.46536 0.7874016 -39.37008 5.94472e-6 0.7874016 -36.99577 -13.46535 0.7874016 -30.15924 -25.30659 0.7874016 -19.68505 -34.09548 0.7874016 -6.836559 -38.77196 0.7874016 6.836523 -38.77196 0.7874016 19.68502 -34.0955 0.7874016 30.15921 -25.30662 0.7874016 36.99576 -13.46539 0.7874016 0 0 0.7874016</float_array>
+          <technique_common>
+            <accessor source="#geom-Cylinder01-positions-array" count="38" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cylinder01-normals">
+          <float_array id="geom-Cylinder01-normals-array" count="222">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 -2.79349e-7 0 0.9396926 0.3420202 0 1 -2.21553e-7 0 0.9396926 0.3420202 0 0.7660444 0.6427876 0 0.7660444 0.6427876 0 0.5 0.8660254 0 0.5 0.8660254 0 0.1736481 0.9848077 0 0.173648 0.9848077 0 -0.1736482 0.9848077 0 -0.1736482 0.9848077 0 -0.5000001 0.8660254 0 -0.5 0.8660254 0 -0.7660444 0.6427876 0 -0.7660444 0.6427877 0 -0.9396926 0.3420202 0 -0.9396926 0.3420201 0 -1 2.88981e-8 0 -1 3.79288e-8 0 -0.9396926 -0.34202 0 -0.9396927 -0.34202 0 -0.7660446 -0.6427873 0 -0.7660447 -0.6427874 0 -0.5000003 -0.8660252 0 -0.5000004 -0.8660251 0 -0.1736485 -0.9848077 0 -0.1736485 -0.9848077 0 0.1736477 -0.9848078 0 0.1736477 -0.9848078 0 0.4999995 -0.8660257 0 0.4999994 -0.8660257 0 0.7660441 -0.6427881 0 0.766044 -0.6427881 0 0.9396925 -0.3420206 0 0.9396925 -0.3420206 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Cylinder01-normals-array" count="74" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Cylinder01-map1">
+          <float_array id="geom-Cylinder01-map1-array" count="129">0.5 0 0 0.75 0 1 0.8055555 0 1 0.861111 0 1 0.9166667 0 1 0.9722222 0 1 0.02777781 0 1 0.08333335 0 1 0.1388889 0 0.9999999 0.1944444 0 1 0.25 0 1 0.3055556 0 0.9999999 0.3611111 0 1 0.4166666 0 0.9999999 0.4722221 0 1 0.5277777 0 0.9999999 0.5833333 0 1 0.6388888 0 0.9999999 0.6944443 0 0.9999999 0.75 0.9999999 1 0.8055555 0.9999999 1 0.861111 0.9999999 1 0.9166667 0.9999999 1 0.9722222 0.9999999 1 0.02777781 0.9999999 1 0.08333335 0.9999999 1 0.1388889 0.9999999 0.9999999 0.1944444 0.9999999 1 0.25 0.9999999 1 0.3055556 0.9999999 0.9999999 0.3611111 0.9999999 1 0.4166666 0.9999999 0.9999999 0.4722221 0.9999999 1 0.5277777 0.9999999 0.9999999 0.5833333 0.9999999 1 0.6388888 0.9999999 0.9999999 0.6944443 0.9999999 0.9999999 0.5 0.9999999 0 -0.02777779 0 1 -0.02777779 0 1 -0.02777779 0.9999999 1 -0.02777779 0 1 -0.02777779 0.9999999 1</float_array>
+          <technique_common>
+            <accessor source="#geom-Cylinder01-map1-array" count="43" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Cylinder01-vertices">
+          <input semantic="POSITION" source="#geom-Cylinder01-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="72">
+          <input semantic="VERTEX" source="#geom-Cylinder01-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Cylinder01-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Cylinder01-map1" offset="2" set="0"/>
+          <p>0 0 0 2 1 2 1 2 1 0 0 0 3 3 3 2 1 2 0 0 0 4 4 4 3 3 3 0 0 0 5 5 5 4 4 4 0 0 0 6 6 6 5 5 38 0 0 0 7 7 7 6 6 6 0 0 0 8 8 8 7 7 7 0 0 0 9 9 9 8 8 8 0 0 0 10 10 10 9 9 9 0 0 0 11 11 11 10 10 10 0 0 0 12 12 12 11 11 11 0 0 0 13 13 13 12 12 12 0 0 0 14 14 14 13 13 13 0 0 0 15 15 15 14 14 14 0 0 0 16 16 16 15 15 15 0 0 0 17 17 17 16 16 16 0 0 0 18 18 18 17 17 17 0 0 0 1 2 1 18 18 18 1 19 1 20 20 20 19 21 19 1 19 1 2 22 2 20 20 20 2 22 2 21 23 21 20 20 20 2 22 2 3 24 3 21 23 21 3 24 3 22 25 22 21 23 21 3 24 3 4 26 4 22 25 22 4 26 4 23 27 23 22 25 22 4 26 4 5 28 5 23 27 23 5 28 39 24 29 24 23 27 40 5 28 41 6 30 6 24 29 24 6 30 6 25 31 25 24 29 24 6 30 6 7 32 7 25 31 25 7 32 7 26 33 26 25 31 25 7 32 7 8 34 8 26 33 26 8 34 8 27 35 27 26 33 26 8 34 8 9 36 9 27 35 27 9 36 9 28 37 28 27 35 27 9 36 9 10 38 10 28 37 28 10 38 10 29 39 29 28 37 28 10 38 10 11 40 11 29 39 29 11 40 11 30 41 30 29 39 29 11 40 11 12 42 12 30 41 30 12 42 12 31 43 31 30 41 30 12 42 12 13 44 13 31 43 31 13 44 13 32 45 32 31 43 31 13 44 13 14 46 14 32 45 32 14 46 14 33 47 33 32 45 32 14 46 14 15 48 15 33 47 33 15 48 15 34 49 34 33 47 33 15 48 15 16 50 16 34 49 34 16 50 16 35 51 35 34 49 34 16 50 16 17 52 17 35 51 35 17 52 17 36 53 36 35 51 35 17 52 17 18 54 18 36 53 36 18 54 18 19 21 19 36 53 36 18 54 18 1 19 1 19 21 19 37 55 37 19 56 19 20 57 20 37 55 37 20 57 20 21 58 21 37 55 37 21 58 21 22 59 22 37 55 37 22 59 22 23 60 23 37 55 37 23 60 42 24 61 24 37 55 37 24 61 24 25 62 25 37 55 37 25 62 25 26 63 26 37 55 37 26 63 26 27 64 27 37 55 37 27 64 27 28 65 28 37 55 37 28 65 28 29 66 29 37 55 37 29 66 29 30 67 30 37 55 37 30 67 30 31 68 31 37 55 37 31 68 31 32 69 32 37 55 37 32 69 32 33 70 33 37 55 37 33 70 33 34 71 34 37 55 37 34 71 34 35 72 35 37 55 37 35 72 35 36 73 36 37 55 37 36 73 36 19 56 19</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_cylinder>
+            <capsegments>1</capsegments>
+            <generateuvs>1</generateuvs>
+            <height>0.7874016</height>
+            <heightsegments>1</heightsegments>
+            <radius>39.37008</radius>
+            <sides>18</sides>
+            <slicefrom>0</slicefrom>
+            <sliceon>0</sliceon>
+            <sliceto>0</sliceto>
+            <smooth>1</smooth>
+          </max_cylinder>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Cylinder01" name="Cylinder01">
+        <instance_geometry url="#geom-Cylinder01">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR198G225B87-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

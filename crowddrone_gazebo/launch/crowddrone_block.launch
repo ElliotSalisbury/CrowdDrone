@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+	<!--arguments that can be changed for this launch file -->
+	<arg name="aggregator" default="mob" />
+	<arg name="gazeboport" default="11345" />
+	<arg name="robot_namespace" default="ardrone" />
+
+	<!-- We resume the logic in empty_world.launch, changing some default arguments -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<env name="GAZEBO_MASTER_URI" value="http://127.0.0.1:$(arg gazeboport)"/>
+		<env name="GAZEBO_MODEL_PATH" value="$(optenv GAZEBO_MODEL_PATH):$(find crowddrone_gazebo)/models/:$(find cvg_sim_gazebo)/models/"/>
+		<arg name="world_name" value="$(find crowddrone_gazebo)/worlds/blockadeworld.world"/>
+		<arg name="gui" value="true"/>
+		<arg name="headless" value="false"/>
+	</include>
+
+
+	<!-- Spawn simulated quadrotor uav -->
+	<include file="$(find cvg_sim_gazebo)/launch/spawn_quadrotor.launch" >
+		<arg name="x" value="0"/>
+		<arg name="y" value="0"/>
+		<arg name="Y" value="0"/>
+		<arg name="robot_namespace" value="$(arg robot_namespace)" />
+	</include>
+
+	<!-- Start logging the drones position -->
+	<node name="drone_logger" pkg="crowddrone_input_aggregator" type="drone_pose_logger.py" args="$(arg robot_namespace) 2"/>
+
+	<!-- Start the rosbridge server -->
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<arg name="port" value="8000"/>
+		<arg name="ssl" value="true" />
+		<arg name="certfile" value="/home/elliot/cert.pem" />
+		<arg name="keyfile" value="/home/elliot/key.nopass.pem" />
+	</include>
+
+	<!-- Start the mjpeg server -->
+	<node name="mjpeg_server" pkg="mjpeg_server" type="mjpeg_server" args="_port:=8080"/>
+
+	<!-- Start the ai decorator-->
+	<node name="ai_decorator" pkg="crowddrone_input_aggregator" type="ai_decorator.py" args="$(arg robot_namespace) [[[-20,-14],[-2,14]],[[-20,-14],[60,-11]],[[42,-14],[60,14]],[[-20,11],[60,14]]] 3"/>
+
+	<!-- Start the new client topic server -->
+	<node name="input_aggregator_server" pkg="crowddrone_input_aggregator" type="input_aggregator_server.py" args="$(arg aggregator) $(arg robot_namespace)"/>
+
+</launch>
